@@ -5799,7 +5799,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 0
+  MaxHealth: 0
   DammageBase: 0
+  weaponCollider: {fileID: 0}
+  flashMaterial: {fileID: 0}
+  deathFVX: {fileID: 0}
+  playerInputSystem: {fileID: 0}
+  activeWeapon: {fileID: 0}
+  coins: 0
 --- !u!95 &519109570
 Animator:
   serializedVersion: 5
@@ -13143,6 +13150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5e70f9339ff15e4cae228c34409aada, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponInfo: {fileID: 0}
   slashAnimPrefab: {fileID: 2828059441922987320, guid: 976e2157b2adecf498a5e1ccc9c6a8f8, type: 3}
   slashAnimSpawnPoint: {fileID: 399635855}
 --- !u!95 &1852100013

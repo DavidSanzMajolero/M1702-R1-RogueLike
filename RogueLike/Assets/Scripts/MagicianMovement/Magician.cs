@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Magician : Character
 {
@@ -36,6 +37,7 @@ public class Magician : Character
             spriteRenderer.enabled = false;
             playerInputSystem.enabled = false;
             activeWeapon.gameObject.SetActive(false);
+            SceneManager.LoadScene("PlayerDeath");
         }
         else if (Health <= MaxHealth)
         {
