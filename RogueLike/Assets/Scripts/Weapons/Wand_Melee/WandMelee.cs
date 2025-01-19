@@ -15,6 +15,8 @@ public class WandMelee : MonoBehaviour, IWeapon
     private bool facingLeft;
     private bool facingRight;
 
+    private AudioSource audioSource;
+
     public WeaponInfo GetWeaponInfo()
     {
         return weaponInfo;
@@ -22,6 +24,7 @@ public class WandMelee : MonoBehaviour, IWeapon
     private void Awake()
     {
         myAnimator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
     private void Start()
     {
@@ -36,6 +39,7 @@ public class WandMelee : MonoBehaviour, IWeapon
 
     public void Attack()
     {
+        audioSource.Play();
         myAnimator.SetTrigger("Attack");
         weaponCollider.gameObject.SetActive(true);
         slashAnim = Instantiate(slashAnimPrefab, slashAnimSpawnPoint.position, Quaternion.identity);

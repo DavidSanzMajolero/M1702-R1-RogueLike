@@ -29,9 +29,13 @@ public class EnemyController : MonoBehaviour
 
     [SerializeField] private GameObject coinCoinPrefab;
 
+    private AudioSource audioSource;
+
+
     private void Awake()
     {
         showBar = RandomBool();
+        audioSource = GetComponent<AudioSource>();
     }
     void Start()
     {
@@ -132,6 +136,7 @@ public class EnemyController : MonoBehaviour
     {
         if (coroutineFinished)
         {
+            audioSource.Play();
             StartCoroutine(DamageAnimation());
             Debug.Log(HP);
             HP -= damage;
