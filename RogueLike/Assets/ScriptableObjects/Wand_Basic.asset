@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 616c8ccbfb13fad489ffb93d1073eedb, type: 3}
+  m_Name: Wand_Basic
+  m_EditorClassIdentifier: 
+  weaponPrefab: {fileID: 5675864345947585498, guid: a080556d061e462419913b703f8f3810, type: 3}
+  weaponCooldown: 0.5
+  weaponDamage: 1
+  weaponRange: 0
